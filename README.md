@@ -6,4 +6,4 @@ Fournit un script bash qui permet la création d'un environnement complet sur li
 ce sera pour la création d'une interface pgAdmin4
 
 
-## vous n'avez plus qu'à changer le .conf pour le faire correspondre à vos besoins, a2ensite le fichier conf, restart apache2 et utiliser certbot qui est déjà installé pour obtenir un certificat valide pour votre site
+vous n'avez plus qu'à changer le .conf pour le faire correspondre à vos besoins, a2ensite le fichier conf, restart apache2 et utiliser certbot qui est déjà installé pour obtenir un certificat valide pour votre site
