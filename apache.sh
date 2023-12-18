@@ -20,7 +20,8 @@ sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=compose
 wget https://get.symfony.com/cli/installer -O - | bash
 curl -sS https://get.symfony.com/cli/installer | bash
 curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
-sudo apt install symfony-cli
+sudo apt install symfony-cli -y
+cd /etc/apache2/sites-available/
 printf "<VirtualHost *:80>
         # The ServerName directive sets the request scheme, hostname and port that
         # the server uses to identify itself. This is used when creating
