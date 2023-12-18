@@ -1,11 +1,11 @@
-cd
+imcd
 sudo apt update && apt upgrade -y
 apt install apache2 -y
 ufw allow "Apache"
 ufw allow "Apache Full"
 ufw allow "OpenSSH"
 yes | sudo ufw enable
-apt install php php-common php-curl php-pgsql php-zip -y
+apt install php php-common php-curl php-pgsql php-zip neovim -y
 apt install postgresql postgresql-contrib -y
 curl -fsS https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo gpg --dearmor -o /usr/share/keyrings/packages-pgadmin-org.gpg
 sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/packages-pgadmin-org.gpg] https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
