@@ -1,6 +1,6 @@
 cd
 sudo apt update && apt upgrade -y
-apt install apache2
+apt install apache2 -y
 ufw allow "Apache"
 ufw allow "Apache Full"
 ufw allow "OpenSSH"
