@@ -19,3 +19,7 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 && sudo apt install gh -y
 
 gh auth login
+
+gh repo clone Ttst49/bashFileSymfonyLinode
+
+chmod 777 ./apache.sh
