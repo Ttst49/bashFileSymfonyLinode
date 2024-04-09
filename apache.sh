@@ -5,7 +5,11 @@ ufw allow "Apache"
 ufw allow "Apache Full"
 ufw allow "OpenSSH"
 yes | sudo ufw enable
-apt install php8.2 php-common php-curl php-pgsql php-zip php-mbstring php-xml php-intl php-gd neovim -y
+apt-get install python-software-properties -y
+sudo add-apt-repository ppa:ondrej/php -y
+apt-get update -y
+sudo apt-get install php8.2 -y
+apt install php-common php-curl php-pgsql php-zip php-mbstring php-xml php-intl php-gd neovim -y
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 nvm install v20.11.0
